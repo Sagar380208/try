@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-dot"></div>
+
+    <div class="loader">
+        <div class="loader-content">
+            <h1 class="loader-title">Loading Portfolio</h1>
+            <div class="loader-progress-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="#hero-page" class="logo">YourName</a>
+            <ul class="nav-links">
+                <li><a href="#hero-page">Home</a></li>
+                <li><a href="#about-page">About</a></li>
+                <li><a href="#skills-page">Skills</a></li>
+                <li><a href="#projects-page">Projects</a></li>
+                <li><a href="#certificates-page">Certificates</a></li>
+                <li><a href="#achievements-page">Achievements</a></li>
+                <li><a href="#contact-page">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="vertical-nav">
+        <a href="#hero-page" title="Home"><i class="fas fa-home"></i><span>Home</span></a>
+        <a href="#about-page" title="About"><i class="fas fa-user"></i><span>About</span></a>
+        <a href="#skills-page" title="Skills"><i class="fas fa-code"></i><span>Skills</span></a>
+        <a href="#projects-page" title="Projects"><i class="fas fa-project-diagram"></i><span>Projects</span></a>
+        <a href="#certificates-page" title="Certificates"><i class="fas fa-award"></i><span>Certificates</span></a>
+        <a href="#achievements-page" title="Achievements"><i class="fas fa-trophy"></i><span>Achievements</span></a>
+        <a href="#contact-page" title="Contact"><i class="fas fa-envelope"></i><span>Contact</span></a>
+    </div>
+
+    <main>
+        <div class="hero page-section" id="hero-page">
+            <div class="globe-container"></div>
+            <div class="hero-content">
+                <h1>Hi, I'm Your Name</h1>
+                <p>A passionate developer creating interactive web experiences.</p>
+                <div class="hero-buttons">
+                    <a href="#projects-page" class="btn btn-primary">View My Work</a>
+                    <a href="#contact-page" class="btn btn-secondary">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-section" id="about-page">
+            <div class="section">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-me-content">
+                    <img src="https://via.placeholder.com/250/EA553B/FFFFFF?text=Your+Photo" alt="Your Photo" class="poster-image">
+                    <div class="about-me-text">
+                        <h3>Hello there!</h3>
+                        <p>I'm [Your Name], a [Your Profession/Role] with a passion for [Your main interest, e.g., creating dynamic web applications, designing intuitive user interfaces, solving complex problems with code]. I specialize in [mention your key technologies, e.g., Frontend Development with React, Backend with Node.js, Data Science with Python].</p>
+                        <p>My journey in the world of technology began [mention when, e.g., during my college days, X years ago] when I discovered the power of [mention what inspired you, e.g., bringing ideas to life through code, crafting seamless digital experiences]. Since then, I've been dedicated to continuous learning and honing my skills to build impactful and user-friendly solutions.</p>
+                        <p>Outside of coding, you can find me [mention a hobby/interest, e.g., exploring new hiking trails, experimenting with new recipes, diving into a good book]. I believe a balanced life fuels creativity and innovation. I'm always eager to collaborate on exciting projects and contribute to meaningful initiatives.</p>
+                        <p>Feel free to connect with me or explore my work below!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-section" id="skills-page">
+            <div class="section">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <h4>HTML5</h4>
+                    </div>
+                    <div class="skill-item">
+                        <h4>CSS3</h4>
+                    </div>
+                    <div class="skill-item">
+                        <h4>JavaScript</h4>
+                    </div>
+                    <div class="skill-item">
+                        <h4>React.js</h4>
+                    </div>
+                    <div class="skill-item">
+                        <h4>Node.js</h4>
+                    </div>
+                    <div class="skill-item">
+                        <h4>Python</h4>
+                    </div>
+                    <div class="skill-item">
+                        <h4>Git & GitHub</h4>
+                    </div>
+                    <div class="skill-item">
+                        <h4>SQL</h4>
+                    </div>
+                    </div>
+            </div>
+        </div>
+
+        <div class="page-section" id="projects-page">
+            <div class="section">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <img src="https://via.placeholder.com/400x200/3498db/FFFFFF?text=Project+1" alt="Project 1">
+                        <div class="project-content">
+                            <h3>Project Title One</h3>
+                            <p>A brief description of Project One, highlighting its key features and technologies used.</p>
+                            <div class="project-links">
+                                <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                                <a href="#" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="https://via.placeholder.com/400x200/2ecc71/FFFFFF?text=Project+2" alt="Project 2">
+                        <div class="project-content">
+                            <h3>Project Title Two</h3>
+                            <p>A brief description of Project Two, highlighting its key features and technologies used.</p>
+                            <div class="project-links">
+                                <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                                <a href="#" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="https://via.placeholder.com/400x200/e74c3c/FFFFFF?text=Project+3" alt="Project 3">
+                        <div class="project-content">
+                            <h3>Project Title Three</h3>
+                            <p>A brief description of Project Three, highlighting its key features and technologies used.</p>
+                            <div class="project-links">
+                                <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                                <a href="#" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="https://via.placeholder.com/400x200/9b59b6/FFFFFF?text=Project+4" alt="Project 4">
+                        <div class="project-content">
+                            <h3>Project Title Four</h3>
+                            <p>A brief description of Project Four, highlighting its key features and technologies used.</p>
+                            <div class="project-links">
+                                <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                                <a href="#" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-section" id="certificates-page">
+            <div class="section">
+                <h2 class="section-title">Certificates</h2>
+                <div class="certificates-achievements-grid">
+                    <div class="cert-achieve-item">
+                        <img src="https://via.placeholder.com/400x400/f39c12/FFFFFF?text=Certificate+1" alt="Certificate 1">
+                        <h3>Certificate Title One</h3>
+                        <p>This certificate was obtained from [Issuing Body] on [Date]. It signifies my proficiency in [Skill/Topic]. This experience greatly enhanced my understanding of [specific area] and allowed me to apply [new techniques/knowledge] in practical scenarios.</p>
+                    </div>
+                    <div class="cert-achieve-item">
+                        <img src="https://via.placeholder.com/400x400/1abc9c/FFFFFF?text=Certificate+2" alt="Certificate 2">
+                        <h3>Certificate Title Two</h3>
+                        <p>Awarded by [Issuing Body] on [Date], this certificate demonstrates my competence in [Skill/Topic]. The coursework involved [briefly mention content, e.g., advanced algorithms, cloud computing fundamentals], and I gained valuable insights into [relevant experience].</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-section" id="achievements-page">
+            <div class="section">
+                <h2 class="section-title">Achievements</h2>
+                <div class="certificates-achievements-grid">
+                    <div class="cert-achieve-item">
+                        <img src="https://via.placeholder.com/400x400/c0392b/FFFFFF?text=Achievement+1" alt="Achievement 1">
+                        <h3>Achievement Title One</h3>
+                        <p>Recognized for [describe achievement, e.g., leading a successful project, developing an innovative solution, excelling in a competition]. This accomplishment taught me the importance of [lesson learned, e.g., teamwork, perseverance, problem-solving under pressure].</p>
+                    </div>
+                    <div class="cert-achieve-item">
+                        <img src="https://via.placeholder.com/400x400/8e44ad/FFFFFF?text=Achievement+2" alt="Achievement 2">
+                        <h3>Achievement Title Two</h3>
+                        <p>Honored for [describe achievement, e.g., contributing to open-source, receiving positive client feedback, mentoring junior developers]. This experience highlighted my ability to [skill demonstrated, e.g., collaborate effectively, deliver high-quality work, foster growth in others].</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-section" id="contact-page">
+            <div class="section">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-form">
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2023 Your Name. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
